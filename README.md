@@ -26,6 +26,18 @@ $ curl --location 'localhost:8000/recommendations?user_id=18&returnMetadata=true
 $ curl --location 'localhost:8000/features?user_id=18'
 ```
 
+
+----
+
+# How to use unit-test and integration test
+All test case will be "tests/" folder that contains two test files:
+1. test_unit.py is for unit-tests each method in recommendation function
+2. test_main.py is for integration test for API application
+
+and you can run test by
+```
+$ pytest
+```
 ----
 
 Here is the result
