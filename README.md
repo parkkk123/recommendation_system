@@ -7,7 +7,7 @@ $ poetry install
 
 After that, you have to download dataset from https://github.com/lukkiddd-tdg/movielens-small/tree/main and it's will show movielens-small folder.
 
-Next, exporting recommendation model by running "traning_model.ipynb" notebook which the model will be saved at './app/weight' folder named "recommend_algor"
+Next, exporting recommendation model by running "traning_model_and_integration_result.ipynb" notebook which the model will be saved at './app/weight' folder named "recommend_algor"
 
 Then you can run api server by
 ```
@@ -65,7 +65,7 @@ Improving recommendation model
 2. Select appropriate features to enhance the accuracy of the recommendation system.
 3. Using data for content recommendation may encounter seasonality issues due to changes in user behavior, necessitating regular model retraining.
 
-Fine tune recommendation Model
+Fine tune recommendation model
 -----------------------
 1. Use k-fold cross validation for creating generalization model.
 2. Use Grid search to adjust hyperparameters.
