@@ -58,20 +58,27 @@ Here is the result
 How to improve in the future
 ========================
 
-Improving Recommendation Model
+Improving recommendation model
 -----------------------
 
-1. ทดลองหลายๆ Model เพื่อหาผล Accuracy ที่มากที่สุด
-2. เลือกใช้ฟีเจอร์ที่เหมาะสมเพื่อช่วยในการสร้างระบบ Recommendation ที่แม่นยำขึ้น
-3. การเลือกใช้ดาต้าในการใช้แนะนำ content จะมีปัญหา seasonality ที่พฤติกรรม User เปลี่ยนแปลงได้จึงต้องมีการ retrain model อย่างสม่ำเสมอ
+1. Experiment with multiple models to find the highest accuracy.
+2. Select appropriate features to enhance the accuracy of the recommendation system.
+3. Using data for content recommendation may encounter seasonality issues due to changes in user behavior, necessitating regular model retraining.
+
+Fine tune recommendation Model
+-----------------------
+1. Use k-fold cross validation for creating generalization model.
+2. Use Grid search to adjust hyperparameters.
+3. Experiment with a variety of similarity measures.
+
 
 
 Using A/B testing for chosing model
 --------
 
-การใช้ A/B Testing model ในกรณีที่มีหลายโมเดลให้ผลแม่นยำและตัดสินใจไม่ได้ว่าจะเลือกใช้ตัวไหน วิธีนี้ก็จะช่วยให้สามารถเลือกใช้ algorithm ได้เหมาะสมมากยิ่งขึ้น
+Using an A/B testing model in cases where there are multiple models with similar accuracy makes it difficult to decide which one to use. This method helps in selecting a more appropriate algorithm.
 
-Speed perfomance for customer facing
+Speed performance for customer facing
 ---------
 
-ความเร็วของระบบ Recommendation เป็นสิ่งสำคัญเพราะจะต้องทำงานกับข้อมูลจำนวนมากที่เกิดขึ้นในอดีต และอาจจะทำให้มีผลต่อความคาดหวังในเชิง Business ได้ หากไม่สามารถส่งผลออกมาให้ในระยะเวลาที่เหมาะสม ดังนั้นจึงต้องมีการออกแบบ infrastructure ที่เหมาะสมสำหรับ production และเลือกใช้เทคนิค Algorithm ทีให้ผลลัพธ์ที่ไวและมีประสิทธิภาพก็จำเป็นอย่างยิ่ง
+The latency of the recommendation system is crucial because it needs to handle a large amount of historical data and may impact business expectations. If it cannot deliver results in a timely manner, it could affect business outcomes. Therefore, designing a suitable infrastructure for production and selecting efficient algorithmic techniques that provide fast and effective results are essential.
